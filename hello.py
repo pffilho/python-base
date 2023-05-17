@@ -40,3 +40,4 @@ elif current_language == "fr_FR":
 
 print(msg)
 
+print(os.chdir("/home/pfranco/Projects/python-base"))
