@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Imprime a tabudada do 1 ao 10
+"""Imprime a tabudada do 1 ao 10  utilizando formatacao de string
+f-string, str.format, interpolação
+
+Resultado esperado:
 ---Tabuada do 1---
 1 x 1 = 1
 2 x 1 = 2
@@ -15,16 +18,11 @@
 __version__ = "0.1.1"
 __author__ = "pfranco"
 
-template_base = """
----Tabuada do {num}---
-{bloco:^18}    
-##################
-"""
-
 # numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 numeros = list(range(1, 11))
 
 # Iterable (percorriveis)
+# __version__ = "0.1.0"
 """
 for numero in numeros:
     print("Tabuada do:", numero)
@@ -33,6 +31,7 @@ for numero in numeros:
     print('------------')
 """
 
+# __version__ = "0.1.1"
 for n1 in numeros:
     print("{:^18}".format(f"Tabuada do {n1}"))
     print()
